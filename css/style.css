@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.notes {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+}
+
+.note {
+    background-color: lightyellow;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 10px;
+    /*height: 300px;*/
+    /*width: 240px;*/
+    box-shadow: 2px 2px 5px 2px #cacaca;
+}
+
+.note-add {
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.note-add-btn {
+    float: right;
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.note-edit {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.note-delete {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 1em;
+    border-radius: .3em;
+    text-align: left;
+    margin-bottom: .75em;
+}
+
+table thead {
+    background: #999;
+    border-bottom: 10px solid #fff;
+    border-radius: .75em;
+}
+
+tr th:first-child {
+    border-top-left-radius: .4em;
+}
+
+tr th:last-child {
+    border-top-right-radius: .4em;
+}
+
+table tbody tr {
+    background: #e8eaf5;
+    color: #797979;
+    border-bottom: 10px solid #fff;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr td {
+    padding: .4em;
+}
+
+tr th:last-child {
+    text-align: right;
+}
+
+tr td:last-child {
+    text-align: right;
+}
+
+table th {
+    padding: .4em;
+}
+
+table i {
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+tbody td:first-child i {
+    padding: .5em;
+    border-radius: 50%;
+    background: #616161;
+}
+
+table tbody i:first-child {
+    margin-left: 0;
+}
+
+
+.pop-btn:hover {
+    /*background-color: rgb(25, 164, 182);*/
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.modal-parent {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    background: white;
+    width: 70%;
+    padding: 30px;
+    border-radius: 6px;
+    /*position: absolute;*/
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    animation: 1s drop;
+    position: relative;
+    box-shadow: 2px 3px 12px #000;
+}
+
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+.btn-close {
+    position: absolute;
+    inset: 10px 20px auto auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.wrapper >p {
+    width: calc(50% - 16px);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper input {
+    line-height: 2;
+    padding: 0 .3em
+}
