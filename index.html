@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+    <title>Notes App</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Notes App</h1>
+        <button class="note-add" type="button"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <table class="table-notes">
+        <thead>
+        <tr>
+            <th>Nane</th>
+            <th>Created</th>
+            <th>Category</th>
+            <th>Content</th>
+            <th>Dates</th>
+            <th><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></th>
+        </tr>
+        </thead>
+        <tbody class="notes">
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+            <td>Tomatoes, bread</td>
+            <td></td>
+            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+            <td>Tomatoes, bread</td>
+            <td></td>
+            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+            <td>Tomatoes, bread</td>
+            <td>3/5/2021, 5/5/2021</td>
+            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+            <td>Tomatoes, bread</td>
+            <td></td>
+            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+            <td>Tomatoes, bread</td>
+            <td></td>
+            <td><i class="fa-solid fa-pen"></i><i class="fa-solid fa-box-archive"></i><i class="fa-solid fa-trash"></i></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button class="note-add-btn pop-btn" type="button">Create Note</button>
+    <div class="modal-parent">
+        <div class="modal">
+            <div class="wrapper">
+                <p class="">
+                    <label for="name">Nane</label>
+                    <input type="text" name="name" id="name" aria-label="name">
+                </p>
+                <p class="">
+                    <label for="created">Created</label>
+                    <input type="text" name="name" id="created" aria-label="created">
+                </p>
+                <p class="">
+                    <label for="category">Category</label>
+                    <input type="text" name="name" id="category" aria-label="category">
+                </p>
+                <p class="">
+                    <label for="content">Content</label>
+                    <input type="text" name="name" id="content" aria-label="content">
+                </p>
+                <p class="">
+                    <label for="dates">Dates</label>
+                    <input type="text" name="name" id="Dates" aria-label="Dates">
+                </p>
+            </div>
+            <span class="btn-close" draggable="true">&times;</span>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Note Category</th>
+            <th>Active</th>
+            <th>Archived</th>
+        </tr>
+        </thead>
+        <tbody class="notes">
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+        </tr>
+        <tr>
+            <td><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Shopping list</td>
+            <td>April 20, 2021</td>
+            <td>Task</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
